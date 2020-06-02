@@ -1,0 +1,906 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.home
+{
+    background-image: url('../img/1.jpg') ;
+    background-position: center center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+
+nav
+{
+    overflow: auto;
+    width: 80%;
+    margin: auto;
+}
+
+.navcont
+{
+    overflow: hidden;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    position: absolute;
+    font-family: 'Source Sans Pro', sans-serif;
+   
+    
+    
+}
+
+
+.navcont li
+{
+    margin: 10px;
+    padding: 5px;
+  
+  
+}
+.navcont ul
+{
+    list-style: none;
+    display: flex;
+   
+    
+}
+
+.navcont a
+{
+    text-decoration: none;
+    color: white;
+    
+}
+.navcont .logo
+{
+    color: rgb(255, 48, 91);
+    font-size: 24px;
+}
+
+.navcont .navhome 
+{
+    color:rgb(255, 48, 91);
+}
+
+.navcont li:hover a
+{
+    color:rgb(255, 48, 91) ;
+}
+
+.home-caption
+{
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0,0,.7); 
+    font-family: 'Source Sans Pro', sans-serif; 
+    text-align: center;
+}
+
+.home-caption h3
+{
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.home-caption h1
+{
+    color: rgb(255, 48, 91);
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-bottom: 10px;
+}
+
+.home-caption h4
+{
+    font-size: 26px;
+    font-weight: lighter
+}
+
+.ani::after
+{
+    
+    content: "|";
+    animation-name: developer;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; 
+     
+}
+
+@keyframes developer
+{
+    0%
+   {
+      content: "|";
+   }
+   10%
+   {
+      content: "De|";
+   }
+   15% 
+   {
+      content: "Deve|";
+   }
+   20% 
+   {
+      content: "Develo|";
+   }
+   25%
+   {
+      content: "Develope|";
+   }
+   30%
+   {
+      content: "Developer|";
+   }
+   35%
+   {
+      content: "De|";
+   }
+   40%
+   {
+      content: "Desi|";
+   }
+   45%
+   {
+      content: "Design|";
+   }
+   50% 
+   {
+      content: "Designer|";
+   }
+   
+}
+
+@media (min-width:400px) and (max-width:700px) {
+    .home-caption h1 {font-size: 40px}
+    .home-caption h4 {font-size: 20px;}
+    .navcont {width: 100%;}
+}
+
+
+
+
+.page2
+{
+    margin-top: 80px;
+}
+
+.page2-cont
+{
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.second
+{
+    width: 50%;
+}
+
+.border
+{
+    width: 360px;
+    height:440px ;
+    border: solid 8px gray ;
+    border-radius: 5px;
+    position: relative;
+}
+
+.box
+{
+    position: absolute;
+    position: relative;
+    top: 15px;
+    left: 20px;
+    width: 360px;
+    overflow: hidden;
+}
+
+.box img
+{
+    border-radius: 5px;
+}
+
+.slid
+{
+    width: 360px;
+    height: 440px;
+    background-color: rgba(120, 144, 144, .6);
+    position: absolute;
+    border-radius: 5px;
+    top: 100%;
+    transition: 1s top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover .slid
+{
+    top: 0;
+}
+
+.list ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.list li 
+{
+    width: 50%;
+    padding: 10px 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+
+
+
+.second .text h1
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.second .text p
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-bottom: 20px;
+    font-size: 16px;
+    color:rgb(51,51,51)
+}
+
+.btn1 
+{
+    padding: 15px 50px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px; 
+    background-color: rgb(255, 48, 91);
+    transition: .3s;
+}
+.btn1 a
+{
+    color: white;
+    font-size: 15px;
+    font-family:'Source Sans Pro', sans-serif; ;
+}
+
+.btn2
+{
+    padding: 15px 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(255, 48, 91); 
+    font-size: 15px;
+    color: white;
+    transition: .3s;
+}
+
+.btn1:hover
+ {
+     background-color: rgb(236, 36, 3);
+ }
+
+ .btn2:hover
+ {
+     background-color: rgb(236, 36, 3);
+ }
+
+ .slid i
+{
+    margin: 10px;
+    color: white;
+    font-size: 25px;
+    transition: .3s;
+}
+
+.slid i:hover
+{
+    color: rgb(255, 48, 91);
+}
+
+
+
+
+.page3
+{
+    margin-top: 100px;
+    background-color: rgb(241, 241, 241);
+    font-family:'Source Sans Pro', sans-serif;
+}
+
+.page3-cont
+{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+.cont-mine
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    
+
+}
+
+.third
+{
+  
+   margin-bottom: 80px;
+   padding: 20px;
+   
+
+}
+
+.page3 h1
+{
+    padding: 80px 0px;
+    color: rgb(51,51,51);
+
+    
+}
+
+.thirdinner
+{
+    width: 25%;
+}
+
+.third i
+{
+    color: rgb(255, 48, 91);
+    font-size: 30px;
+    padding: 10px;
+    transition: 1s;
+    transition: transform .5s;
+    
+
+}
+
+.page3 h2
+{
+    font-size: 22px;
+    padding: 10px;
+}
+
+.third p
+{
+    padding: 10px;
+}
+
+.third:hover 
+{
+    box-shadow: 5px 0px white;
+    background-color: rgb(255, 255, 255);
+}
+
+.third:hover i
+{
+    transform: scale(1.2,1.2);
+    
+}
+
+
+.page4
+{
+    font-family:'Source Sans Pro', sans-serif;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.page4-cont
+{
+    width: 75%;
+    margin: auto;
+    overflow: auto;
+}
+
+
+
+.page4-list li
+{
+    margin: 15px;
+    
+}
+
+.page4-list ul
+{   display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.page4-list a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.page4-list .a-color
+{
+    color: rgb(255, 48, 91);
+}
+
+.proflex
+{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    
+}
+.product
+{
+    margin: 10px;
+    width: 33%;
+    position: relative;
+    overflow: auto;
+    overflow: hidden;
+    
+}
+
+
+.product img
+{
+    width: 100%;
+    
+}
+
+
+.product-slid
+{
+    width: 360px;
+    height: 269px;
+    background-color: rgba(0, 0,0,.5);
+    position: absolute;
+    top: 342px;
+}
+
+.product:hover .product-slid
+{
+    top: 0;
+}
+
+.product i
+{
+ font-size: 20px;
+ color: rgb(255, 48, 91);
+ position: absolute;
+ bottom: 15px;
+ right: 15px;
+}
+
+.page4 h1
+{
+    padding: 30px;
+    color: rgb(51,51,51);
+}
+
+.page4 ul
+
+{
+    padding: 30px;
+}
+
+
+.page5
+{
+    font-family:'Source Sans Pro', sans-serif;
+    margin-top: 50px;
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+
+}
+
+.page5-cont
+{
+    width: 80%;
+    margin: auto;
+}
+
+.fifthflex
+{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+
+}
+
+.fifth 
+{
+    width: 25%;
+    padding-top: 100px;
+}
+
+.fifth i
+{
+    font-size: 30px;
+    color: rgb(255, 48, 91);
+    padding-bottom: 8px;
+}
+.fifth p
+{
+    font-size: 15px;
+}
+
+.fifth h5
+{
+    font-size: 25px;
+    padding: 5px;
+}
+
+.page6
+{
+    margin-top: 100px;
+    font-family:'Source Sans Pro', sans-serif;
+}
+
+.page6 h1
+{
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 35px;
+    color: rgb(51,51,51)
+}
+
+.page6-cont
+{
+    width: 80%;
+    margin: auto;
+   
+}
+
+.feedback-cont
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    
+  
+}
+
+.feedback
+{
+    width: 800px;
+    height: 275px;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+ 
+}
+
+.feedback h2
+{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #3a3939;
+}
+
+.feedback h4
+{
+    margin: 20px 0px;
+    color: #555555;
+}
+
+h4 i
+{
+    margin-right: 5px;
+}
+
+.feedback p
+{
+    padding-bottom: 10px;
+    color: #555555;
+}
+
+.feedback-img img
+{
+    width: 110px;
+    height: 110px;
+    border-radius: 60px;
+}
+
+.feedback-img
+{
+    width: 20%;
+    z-index: 999999;
+    margin-top: 40px;
+   
+}
+
+.feedback-text
+{
+    width: 70%;
+}
+
+.red 
+{
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    background-color: rgb(255, 48, 91);
+   left: -100px;
+   top: -100px;
+   border-bottom-right-radius: 160px;
+}
+
+.stars
+{
+    color: gold;
+}
+
+.page7
+{
+    margin-top: 80px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: rgb(241, 241, 241);
+    overflow: auto;
+    
+}
+
+.page7 h1
+{
+    text-align: center;
+    margin: 100px;
+}
+.page7-cont
+{
+    width: 80%;
+    margin: auto;
+}
+
+.blog
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.inner-blog
+{
+    width: 33.333%;
+    margin: 15px;
+    background-color: white;
+   
+    
+}
+
+.inner-blog img
+{
+    width: 100%;
+    
+}
+
+.blog-text
+{
+    width: 85%;
+    margin: auto;
+    color: rgb(51,51,51);
+    margin-bottom: 30px;
+  
+}
+
+.inner-blog p
+{
+    padding: 20px 0px;
+}
+
+.blog-text a
+{
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: rgb(51,51,51);
+    transition: .3s;
+}
+
+.atext 
+{
+    font-size: 22px;
+    font-weight: bold;
+    
+}
+
+.inner-blog iframe
+{
+    width: 375px;
+     height: 210px;
+    
+}
+
+.blog-text a:hover 
+{
+    color: rgb(255, 48, 91);
+}
+
+.page8
+{
+    margin-top: 80px;
+    font-family:'Source Sans Pro', sans-serif;
+}
+
+.page8 h1
+{
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.page8-cont
+{
+    width: 60%;
+    margin: auto;
+}
+
+.page8-cont .name 
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.name input 
+{
+    width: 50%;
+    height: 40px;
+    margin: 20px 30px 20px 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.page8-cont .subject input
+{
+    width: 100%;
+    height: 40px;
+   
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.page8-cont .subject
+{
+    
+    padding: 20px 25px 20px 0px;
+}
+
+::placeholder
+{
+   padding: 10px 10px;
+}
+
+textarea
+{
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+}
+
+.textarea
+{
+    padding: 20px 25px 20px 0px;
+}
+
+.btn3
+{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(255, 48, 91); 
+    font-size: 15px;
+    color: white;
+}
+
+
+
+
+.page9
+{
+    margin-top: 50px;
+    font-family:'Source Sans Pro', sans-serif;
+    background-color: rgb(51, 51, 51);
+    padding-bottom: 50px;
+}
+
+.page9-cont
+{
+    width: 70%;
+    margin: auto;
+}
+
+
+.share
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.font
+{
+    width: 100%;
+}
+
+.font ul
+{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+.font ul a 
+{
+    color: white;
+}
+
+.font ul li 
+{
+    margin: 15px;
+    padding-top: 50px ;
+
+}
+
+.font ul li i
+{
+    font-size: 20px;
+}
+
+.copyrights p
+{
+    color: white;
+}
+.copyrights a 
+{
+    color: rgb(255, 48, 91);
+    text-decoration: none;
+}
+
+.font li:hover a
+{
+    color: rgb(255, 48, 91);
+}
+
+.btn3:hover
+ {
+     background-color: rgb(236, 36, 3);
+ }
+
+
+
+
+
+
+
+
+
+
+
+
